@@ -1,0 +1,6 @@
+name: Bootstrap-Sass-Admin
+description: 'Bootstrap 4.6 sass customizable'
+author: webBook
+homepage: webbook.page
+code: bootstrap-sass-admin
+form: fields.yaml

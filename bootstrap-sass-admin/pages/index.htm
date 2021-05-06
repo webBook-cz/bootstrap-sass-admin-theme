@@ -1,0 +1,45 @@
+title = "Home"
+url = "/"
+layout = "default"
+is_hidden = 0
+==
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="{{'assets/img/AdminLTELogo.png'|theme}}" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  {% partial 'site/nav.htm' %}
+  {% partial 'site/sidebar.htm' %}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+
+    {% partial 'sections/header' %}
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+
+        {% partial 'sections/small-boxes' %}
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-7 connectedSortable">
+            {% partial 'cards/chart' %}
+            {% partial 'cards/chat' %}
+            {% partial 'cards/todo' %}
+          </section>
+          <!-- /.Left col -->
+          <!-- right col (We are only adding the ID to make the widgets sortable)-->
+          <section class="col-lg-5 connectedSortable">
+            {% partial 'cards/map' %}
+            {% partial 'cards/graph' %}
+            {% partial 'cards/calendar' %}
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->

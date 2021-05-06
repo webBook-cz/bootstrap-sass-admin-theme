@@ -1,0 +1,20 @@
+{% if this.theme.font_awesome %}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+{% endif %}
+{% if this.theme.fonts %}
+    <link href="{{ this.theme.fonts }}" rel="stylesheet">
+{% endif %}
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  
+{% set styleslist = ['assets/plugins/fontawesome-free/css/all.min.css'] %}
+{% set styleslist = styleslist|merge(['assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css']) %}
+{% set styleslist = styleslist|merge(['assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css']) %}
+{% set styleslist = styleslist|merge(['assets/plugins/jqvmap/jqvmap.min.css']) %}
+{% set styleslist = styleslist|merge(['assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css']) %}
+{% set styleslist = styleslist|merge(['assets/plugins/daterangepicker/daterangepicker.css']) %}
+{% set styleslist = styleslist|merge(['assets/plugins/summernote/summernote-bs4.min.css']) %}
+
+{% set styleslist = styleslist|merge(['assets/scss/admin.scss']) %}
+
+<link href="{{ styleslist|theme }}" rel="stylesheet">
+{% styles %}

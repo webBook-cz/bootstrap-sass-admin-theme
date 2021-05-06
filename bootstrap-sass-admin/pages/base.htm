@@ -1,0 +1,26 @@
+title = "Home"
+url = "/base"
+layout = "default"
+is_hidden = 0
+==
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="{{'assets/img/AdminLTELogo.png'|theme}}" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  {% partial 'site/nav.htm' %}
+  {% partial 'site/sidebar.htm' %}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+
+    {% partial 'sections/header' title = 'Base' %}
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
